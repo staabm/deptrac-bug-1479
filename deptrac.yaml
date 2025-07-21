@@ -1,0 +1,19 @@
+deptrac:
+  analyser:
+    types:
+      - use
+      - file
+  paths:
+    - lib/
+  layers:
+    - name: Controller
+      collectors:
+        - type: classLike
+          value: .*Controller.*
+    - name: ActionResults
+      collectors:
+        - type: implements
+          value: 'ActionResult'
+  ruleset:
+    Controller:
+      - ActionResults
