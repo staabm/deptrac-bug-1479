@@ -1,5 +1,10 @@
 {
     "require-dev": {
         "deptrac/deptrac": "^4.0"
+    },
+    "autoload": {
+        "classmap": [
+            "vendor/framework/"
+        ]
     }
 }

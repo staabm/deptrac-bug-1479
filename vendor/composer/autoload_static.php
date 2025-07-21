@@ -174,8 +174,10 @@ class ComposerStaticInit78a8d2ca9aec2041329da04eb2f112e7
     );
 
     public static $classMap = array (
+        'ActionResult' => __DIR__ . '/..' . '/framework/ActionResult.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
+        'RedirectResult' => __DIR__ . '/..' . '/framework/RedirectResult.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
